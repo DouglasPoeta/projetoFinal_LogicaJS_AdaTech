@@ -1,0 +1,261 @@
+ @font-face {
+     font-family: bob;
+     src: url(fonts/SpongeboyMeBob.ttf);
+ }
+
+ @font-face {
+     font-family: font-title;
+     src: url(fonts/SpongeMeetsVanilla.ttf);
+ }
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     outline: none;
+ }
+
+
+ img {
+     height: 25px;
+     width: 25px;
+     margin-left: 8px;
+     opacity: 0;
+     transition: opacity 0.5s ease-in-out;
+ }
+
+
+ body {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 3rem;
+     gap: 3rem;
+   }
+
+ h1 {
+     font-size: 50px;
+     font-family: bob;
+     text-align: center;
+     padding-top: 10px;
+ }
+
+
+ .todo-container {
+     gap: 3rem;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     background-color: #fef531;
+     width: auto;
+     border-radius: 10px;
+     padding: 20px;
+     margin-bottom: 30px;
+     background-image: url(assets/fundoBob.svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: 5% 15%;
+     max-width: 800px;
+ }
+
+
+ .content-add-item {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+ }
+
+
+ .input-add {
+     display: flex;
+     align-items: center;
+     border: none;
+     border-radius: 10px;
+     width: 600px;
+     height: 40px;
+     padding-left: 10px;
+ }
+
+
+ .btn-add {
+     background-color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 5rem;
+     height: 40px;
+     width: 45px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     color: aliceblue;
+     box-shadow: 3px 12px 30px rgb(0, 0, 0, 10);
+ }
+
+
+ .btn-add:hover {
+     background-color: rgba(0, 0, 0, 0.795);
+     transition: 0.3s;
+ }
+
+ #todo-list {
+     margin-top: 10px;
+     width: 100%;
+     list-style-type: none;
+ }
+
+
+ .img-task {
+     padding: 10px;
+     width: 100%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     max-width: 700px;
+ }
+
+
+ .task {
+     display: flex;
+     border-radius: 10px;
+     padding: 10px;
+     background-color: rgb(239, 107, 60);
+     box-shadow: 1px 4px 10px rgb(0, 0, 0, 0.2);
+     height: 50px;
+     align-items: center;
+     margin-bottom: 10px;
+     margin-top: 10px;
+     cursor: pointer;
+     transform: capitalize;
+     width: 100%;
+     max-width: 700px;
+ }
+
+
+ .task:hover img {
+     opacity: 1;
+ }
+
+
+ .concluida-style {
+     background-color: rgb(70, 129, 12);
+     text-decoration: line-through;
+ }
+
+
+ h3 {
+     display: flex;
+     justify-content: space-between;
+     text-transform: capitalize;
+     font-family: font-title;
+     font-size: 35px;
+ }
+
+
+ .style-id {
+     font-family: font-title;
+     font-size: 30px;
+     margin-right: 10px;
+     align-items: center;
+ }
+
+
+ .input-id-style {
+     display: flex;
+     align-items: center;
+     border: none;
+     border-radius: 10px;
+     width: 600px;
+     height: 40px;
+     padding-left: 20px;
+ }
+
+
+ .input-title-style {
+     display: flex;
+     align-items: center;
+     border: none;
+     border-radius: 10px;
+     width: 400px;
+     height: 40px;
+     padding-left: 10px;
+ }
+
+
+ .content-id-item {
+     display: flex;
+     gap: 1rem;
+ }
+
+
+ .content-title-item {
+     display: flex;
+     gap: 1rem;
+ }
+
+
+ .content-style-titleID {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ label {
+     display: flex;
+     align-items: center;
+     min-width: 100px;
+     font-size: 24px;
+     font-family: bob;
+ }
+
+
+ fieldset {
+     display: block;
+     padding: 10px;
+     margin-top: 15px;
+     border-radius: 10px;
+     background-color: rgba(250, 233, 140, 0.623);
+     border: solid;
+     box-shadow: 3px 12px 30px rgb(0, 0, 0, 10);
+ }
+
+
+ p {
+     font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      word-wrap: break-word;
+      max-width: 500px;
+ }
+
+
+ input{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+ }
+
+
+ .bob-figure {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 300px;
+    z-index: 999;
+    opacity: 10.0;
+    margin-right: 10px;
+}
+
+
+.bob-figure-2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 350px;
+    height: 250px;
+    z-index: 999;
+    opacity: 10.0;
+}

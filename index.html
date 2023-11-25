@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo LiSt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="todo-container">
+        <h1>TODO LIST</h1>
+        <div class="content-add-item ">
+            <label for="descricao">Tarefa:</label>
+            <input class="input-add" type="text" placeholder="Digite a tarefa" id="input">
+            <button class="btn-add" title="clique para adicionar" id="button_input">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-plus-lg"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                </svg>
+            </button>
+        </div>
+        <div class="content-title-item">
+            <label for="Titulo">Titulo:</label>
+            <input class="input-title-style" type="text" placeholder="Dê um título a tarefa" id="inputTitle">
+        </div>
+        <div class="content-id-item">
+            <label for="Buscar">Buscar:</label>
+            <input class="input-id-style" type="text" placeholder="Digite o ID para buscar a tarefa" id="inputID">
+            <button class="btn-add " title="clique para adicionar ID" id="buttonID">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </button>
+        </div>
+        <ul id="todo-list">
+        </ul>
+    </div>
+    <img src="assets/bobfigure.png" alt="" class="bob-figure">
+    <img src="assets/pngwing.com.png" alt="" class="bob-figure-2">
+</body>
+<script src="scripts.js"></script>
+
+</html>
